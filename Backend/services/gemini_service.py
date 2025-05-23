@@ -29,7 +29,9 @@ def generar_respuesta_con_historial(pregunta: str, contexto: dict, historial: li
             "role": "user",
             "parts": [
                 "Eres un asistente de estilo de vida. Responde en español de forma clara, concisa y sin tecnicismos.",
-                f"Este es el plan actual del usuario:\n{json.dumps(contexto, indent=2, ensure_ascii=False)}"
+                f"Este es el plan actual del usuario:\n{json.dumps(contexto, indent=2, ensure_ascii=False)}",
+                "Si el usuario pregunta algo que no esta relacionado con su plan, responde de forma clara y concisa que no tiene relacion sobre el plan.",
+
             ]
         })
 
