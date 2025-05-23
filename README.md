@@ -7,36 +7,38 @@ Este proyecto implementa un backend con **Gemini 2.0 Flash**, y se encuentra en 
 
 ## 📁 Estructura del Proyecto
 
-Planificador_IA/  
+```text
+Planificador_IA/
 ├── Backend/ # Backend con Python y Gemini 2.0 Flash
-│   ├── controllers/  
-│   │   └── plan_controller.py        # Lógica para /generate-plan, /adjust-plan y /chat  
-│   ├── routes/  
-│   │   └── plan_routes.py            # Define las rutas HTTP con Flask  
-│   ├── services/  
-│   │   └── gemini_service.py         # Conexión con Gemini 2.0 Flash  
-│   ├── utils/  
-│   │   ├── prompt_builder.py         # Construcción dinámica del prompt  
-│   │   └── format_plan.py            # Limpieza y validación del plan generado  
-│   ├── .env                          # Clave API de MakerSuite  
-│   ├── app.py                        # Punto de entrada principal  
-│   └── requirements.txt              # Dependencias Python  
+│   ├── controllers/
+│   │   └── plan_controller.py       # Lógica para /generate-plan, /adjust-plan y /chat
+│   ├── routes/
+│   │   └── plan_routes.py           # Define las rutas HTTP con Flask
+│   ├── services/
+│   │   └── gemini_service.py        # Conexión con Gemini 2.0 Flash
+│   ├── utils/
+│   │   ├── prompt_builder.py        # Construcción dinámica del prompt
+│   │   └── format_plan.py           # Limpieza y validación del plan generado
+│   ├── .env                         # Clave API de MakerSuite
+│   ├── app.py                       # Punto de entrada principal
+│   └── requirements.txt            # Dependencias Python
+├── Frontend/                        # Interfaz de usuario en React + Vite
 |
-├── Frontend/ # Interfaz de usuario en React + Vite
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── ChatIA.tsx            # Chat con IA sobre el plan generado
-│   │   │   ├── SidebarHistorial.tsx  # Historial de planes generados
-│   │   │   ├── Layout.tsx            # Estructura principal con Sidebar
-│   │   ├── context/
-│   │   │   └── PlanContext.tsx       # Estado global de planActivo e historial
-│   │   ├── pages/
-│   │   │   ├── GenerarPlan.tsx       # Pantalla para generar/ver plan y conversar
-│   │   │   └── Menu.tsx              # Página de inicio (no usada activamente)
-│   │   ├── services/
-│   │   │   └── planService.ts        # Llamadas HTTP al backend Gemini                            
-└── README.md  
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── ChatIA.tsx           # Chat con IA sobre el plan generado
+│   │   │   ├── SidebarHistorial.tsx # Historial de planes generados
+│   │   │   └── Layout.tsx           # Estructura principal con Sidebar
+│   │   ├── context/
+│   │   │   └── PlanContext.tsx      # Estado global de planActivo e historial
+│   │   ├── pages/
+│   │   │   ├── GenerarPlan.tsx      # Pantalla para generar/ver plan y conversar
+│   │   │   └── Menu.tsx             # Página de inicio (no usada activamente)
+│   │   └── services/
+│   │       └── planService.ts       # Llamadas HTTP al backend Gemini
+└── README.md
+```
 
 ---
 
