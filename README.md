@@ -97,11 +97,11 @@ Planificador_IA/
 ### 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tu_usuario/Planificador_IA.git
-cd Planificador_IA/Gemini/backend
+git clone https://github.com/Santizo00/Planificador-IA.git
 ```
 
 ### 2. Crea entorno virtual e instala dependencias:
+cd Planificador_IA/Gemini/backend
 python -m venv venv
 venv\Scripts\activate  # o source venv/bin/activate en Linux/Mac
 
@@ -113,6 +113,15 @@ GEMINI_API_KEY=tu_clave_de_makersuite
 ### 4. Ejecuta el servidor:
 python app.py
 
+## ▶️ Cómo ejecutar el backend de Gemini
+
+1. Desde la raíz del proyecto:
+```bash
+cd Frontend
+npm install
+npm run dev
+```
+2. La app estará disponible en: http://localhost:3000
 
 ## 📬 Endpoints disponibles
 - POST /generate-plan
@@ -147,16 +156,6 @@ Permite hacer preguntas personalizadas sobre el plan, con historial de conversac
     }
   ]
 }
-
-## ▶️ Cómo ejecutar el backend de Gemini
-
-1. Desde la raíz del proyecto:
-```bash
-cd Frontend
-npm install
-npm run dev
-```
-2. La app estará disponible en: http://localhost:3000
 
 ## 🤖 Herramientas de IA Utilizadas
 Este proyecto fue completamente ideado y construido por el autor del repositorio.
